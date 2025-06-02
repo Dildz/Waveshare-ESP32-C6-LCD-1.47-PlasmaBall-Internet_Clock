@@ -21,9 +21,9 @@ This code implements an internet clock with Wi-Fi connectivity on the Waveshare 
 - In the **'sls_files'** folder, there are 2 subfolders: **'export'** & **'project'**
 - Open SquareLine_Project in the **'project'** folder with Squareline Studio to make changes to the UI.
 - You may need to update the SLS project settings **Project Export Root** & **UI Files Export Path** locations to reflect where you have saved the Arduino project **before exporting**.
-- Export project files to the **'export'** folder & copy all, then replace all files in the **'src'** folder.
-- **Do not export into the 'src' folder as SLS will erase the folder contents before exporting!**
-- **NB!!** Every time a change is made in SLS, & the UI files have been replaced in the Arduino project folder - you **must** edit the ui.h file on line 30: *#include "screens/ui_MainScreen.h"* **TO** *#include "ui_MainScreen.h"* (I'm not sure why SLS is exporting this way as the flat export option is selected.)
+- Export project files to the **'export'** folder & copy all, then replace all files in the **root** of the Arduino project folder.
+- **Do not export into the root Arduino project folder as SLS will erase the folder contents before exporting!**
+- **NB!!** Every time a change is made in SLS, & the UI files have been replaced in the Arduino project folder - you **must** edit the ui.h file on line 30: **FROM** *#include "screens/ui_MainScreen.h"* **TO** *#include "ui_MainScreen.h"* (remove *'screens/'* -- I'm not sure why SLS is exporting this way as the flat export option is selected.)
 
 ## Credits:
 This project is inspired by [Volos Projects - waveshareBoards](https://github.com/VolosR/waveshareBoards) modified for the Waveshare ESP32-C6-LCD-1.47
