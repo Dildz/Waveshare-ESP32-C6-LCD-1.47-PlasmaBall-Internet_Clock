@@ -1,7 +1,7 @@
 # Waveshare ESP32-C6-LCD-1.47 Internet Clock Project with SquareLine Studio UI
 
 ## Description:
-This code implements an internet clock with Wi-Fi connectivity on the Waveshare ESP32-C6 1.47" LCD display. The project uses Squareline Studio to create the UI interface and includes time/date display, Wi-Fi status monitoring, and visual effects. The clock synchronizes with NTP servers and maintains time using the ESP32's RTC capabilities.
+This code implements an internet clock with Wi-Fi connectivity on the Waveshare ESP32-C6 1.47" LCD display in landscape mode. The project uses Squareline Studio to create the UI interface and includes time/date display, Wi-Fi status monitoring, and visual effects. The clock synchronizes with NTP servers and maintains time using the ESP32's RTC capabilities.
 
 ## How it works:
 - Initialization: Sets up display, LVGL, and WiFi connection
